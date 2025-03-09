@@ -167,6 +167,36 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Method overview. -->
+<section class="section">
+    <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+        <p>
+          <b>Overview framework of the proposed UniNet.</b> It consists of a pair of teachers models, a bottleneck, and a student model, with
+          several key components: <b>Multi-scale Embedding Module (MEM)</b>, <b>Domain-related Feature Selection (DFS)</b>, 
+          <b>Similarity-Contrastive loss \( \mathcal{L}_\mathit{SC} \)</b>, and <b>Margin loss \( \mathcal{L}_\mathit{M} \)</b>. 
+        </p>
+          <!-- First row of images -->
+          <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+            <img src="./static/images/UniNet.pdf" class="center" style="max-width: 90%;">
+          </div>
+        <p>
+<!--           Given an input image \( I \), the CRFR-P strategy generates a facial region mask
+          \( M_\mathit{fr} \) and an image mask \( M \). The MIM network, a masked autoencoder, reconstructs
+          the masked face \( I_\mathit{m} \) from visible patches \( x_\mathit{v} \) (masked by \( M \)),
+          with an emphasis on the fully masked region \( I_\mathit{m}^\mathit{fr} \) (specified by \( M_\mathit{fr} \)).
+          The ID network maximizes the representation similarity between the masked online view and the
+          unchanged target view of the same sample by projection upon a disentangled space structured by
+          Siamese rep decoders. -->
+        </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
